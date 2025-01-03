@@ -1,8 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js with Supabase Authentication
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), featuring authentication powered by [Supabase](https://supabase.io).
 
 ## Getting Started
 
-First, run the development server:
+To start the development server, run:
 
 ```bash
 npm run dev
@@ -14,11 +16,23 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can begin editing the page by modifying `app/page.tsx`. The page will automatically update as you make changes.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Supabase Authentication Setup
+
+1. **Create a Supabase Project**: Go to [Supabase](https://supabase.io) and create a new project.
+
+2. **Get API Keys**: After creating your project, navigate to the settings to find your API keys.
+
+3. **Environment Variables**: Add your Supabase URL and Anon Key to your `.env.local` file:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+   ```
+
+4. **Implement Authentication**: Use the Supabase client to implement authentication in your application. Refer to the [Supabase Auth documentation](https://supabase.io/docs/guides/auth) for more details.
 
 ## Learn More
 
