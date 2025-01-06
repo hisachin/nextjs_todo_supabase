@@ -1,50 +1,77 @@
-# Next.js with Supabase Authentication
+# Next.js Todo Application with Supabase
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), featuring authentication powered by [Supabase](https://supabase.io).
+A modern, feature-rich Todo application built with Next.js 15, TypeScript, Tailwind CSS, and Supabase authentication. This application uses shadcn/ui components for a consistent and beautiful UI design.
+
+## Features
+
+- 🔐 Authentication with Supabase
+- 🌓 Dark/Light mode support
+- 📱 Responsive design
+- ✨ Modern UI with shadcn/ui components
+- 🎯 Priority-based todo management
+- ✏️ Inline todo editing
+- 🔄 Real-time updates
+- 📊 Dashboard overview
+- 🎨 Customizable themes
+
+## Tech Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Authentication**: Supabase
+- **Icons**: Lucide Icons
+- **Fonts**: Geist Sans & Geist Mono
 
 ## Getting Started
 
-To start the development server, run:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Visit [http://localhost:3000](http://localhost:3000) in your browser to view the application.
-
-You can begin editing the page by modifying `app/page.tsx`. The page will automatically update as you make changes.
-
-## Supabase Authentication Setup
-
-1. **Create a Supabase Project**: Go to [Supabase](https://supabase.io) and create a new project.
-
-2. **Get API Keys**: After creating your project, navigate to the settings to find your API keys.
-
-3. **Environment Variables**: Add your Supabase URL and Anon Key to your `.env.local` file:
-   ```env
-   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/hisachin/nextjs_todo_supabase.git
+   cd nextjs_todo_supabase
    ```
 
-4. **Implement Authentication**: Use the Supabase client to implement authentication in your application. Refer to the [Supabase Auth documentation](https://supabase.io/docs/guides/auth) for more details.
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-## Learn More
+3. **Environment Setup**
+   
+   Create a `.env.local` file in the root directory:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Acknowledgments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org/)
+- [Supabase](https://supabase.io/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide Icons](https://lucide.dev/)
